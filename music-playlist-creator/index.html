@@ -10,16 +10,105 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   
     <header>
-        <!-- Your header content here -->
+        <h1>Music Playlist Explorer</h1>
     </header>
 
     <main> 
-        <!-- Your main content here -->
+        <section class="playlist-cards">
+            <div class="card" onclick="openModal({imageUrl: 'path/to/festival.jpg', name: 'Something Good',  artist: 'Miley Cirus', lineup: ['Artist A', 'Artist B']})">
+                <img src="./assets/img/broken.png">
+                <h2>Playlist Title</h2>
+                <h5>Creator Name</h5>
+                <p>Like</p>
+            </div>
+            <div class="card">
+                <img src="./assets/img/broken.png">
+                <h2>Playlist Title</h2>
+                <h5>Creator Name</h5>
+                <p>Like</p>
+            </div>
+            <div class="card">
+                <img src="./assets/img/broken.png">
+                <h2>Playlist Title</h2>
+                <h5>Creator Name</h5>
+                <p>Like</p>
+            </div>
+            <div class="card">
+                <img src="./assets/img/broken.png">
+                <h2>Playlist Title</h2>
+                <h5>Creator Name</h5>
+                <p>Like</p>
+            </div>
+            <div class="card">
+                <img src="./assets/img/broken.png">
+                <h2>Playlist Title</h2>
+                <h5>Creator Name</h5>
+                <p>Like</p>
+            </div><div class="card">
+                <img src="./assets/img/broken.png">
+                <h2>Playlist Title</h2>
+                <h5>Creator Name</h5>
+                <p>Like</p>
+            </div><div class="card">
+                <img src="./assets/img/broken.png">
+                <h2>Playlist Title</h2>
+                <h5>Creator Name</h5>
+                <p>Like</p>
+            </div><div class="card">
+                <img src="./assets/img/broken.png">
+                <h2>Playlist Title</h2>
+                <h5>Creator Name</h5>
+                <p>Like</p>
+            </div>
+        </section>
     </main>
+    <div id="playlistModal" class="modal">
+   <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="album-title-box">
+      <img id="playlistImage" src="./assets/img/broken.png" alt="Playlist Cover Image">
+      <div class="song-box-content">
+      <h3 id="playlistTitle">Playlist Title</h3>
+      <h3 id="creatorname">Artist Name</h3>
+      </div>
+      </div>
+      <ul id="songs">
+        <li>
+            <div class="song-box">
+            <img src="./assets/img/broken.png" alt="">
+            <div class="song-box-content">
+            <h4>Playlist Title</h4>
+            <h4>Artist Name</h4>
+            </div>
+            </div>
+        </li>
+         <li>
+            <div class="song-box">
+            <img src="./assets/img/broken.png" alt="">
+            <div class="song-box-content">
+            <h4>Playlist Title</h4>
+            <h4>Artist Name</h4>
+            </div>
+            </div>
+        </li>
+         <li>
+            <div class="song-box">
+            <img src="./assets/img/broken.png" alt="">
+            <div class="song-box-content">
+            <h4>Playlist Title</h4>
+            <h4>Artist Name</h4>
+            </div>
+            </div>
+        </li>
+
+      </ul>
+   </div>
+</div>
 
     <footer>
-        <!-- Your footer content here -->
+    Emmanuel Aina
     </footer>
     <script src="data/data.js"></script>
     <script src="script.js"></script>
