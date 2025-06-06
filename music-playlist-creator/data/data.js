@@ -5,7 +5,7 @@ let playlists =
 		"playlist_name": "Pop",
 		"playlist_author": "Emmanuel Aina",
 		"playlist_art": "assets/img/pop.jpg",
-        "likes": 1,
+        "likes": 0,
         "Date": Date.now()-7,
 		"songs": [
 			{"songtitle":"Blinding Lights","artistname":"The Weeknd","albumname":"After Hours","duration": "1:44", "songArt": "./assets/img/one.jpg"},
