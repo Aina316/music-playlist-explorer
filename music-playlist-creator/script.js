@@ -22,7 +22,7 @@ window.onclick = function(event) {
 
 const loadCards = () =>{
     let cards = document.querySelector('.playlist-cards')
-    console.log('creating cards...')
+    cards.innerHTML = ''
     for (const playlist of playlists){
         let cardElement = createCardElements(playlist)
         cards.appendChild(cardElement)
@@ -51,7 +51,19 @@ const createCardElements = (playlist) =>{
                 <i id="like${playlist.playlistID}" class="fa-regular fa-heart"></i> 
         
                 <p id="like-count${playlist.playlistID}">${playlist.likes}</p>
+                <button class ="delete-btn" data-id=(${playlist.playlistID})>Delete</button>
                 </div>`;
+    card.querySelector('.delete-btn').addEventListener('click', function (e) {
+        e.stopPropagation();
+        const id = playlist.playlistID;
+        const index = playlists.findIndex(p => p.playlistID=== id)
+        if(index!==-1){
+            playlists.splice(index, 1)
+            let cards = document.querySelector('.playlist-cards')
+            card.innerHTML = ''
+            loadCards()
+        }
+    })
     return card;
 }
 
@@ -134,6 +146,5 @@ for(let i = songs.length-1; i>=0; i--){
 }
 return songs
 }
-
 
 
