@@ -6,8 +6,8 @@ body {
 header{
     text-align: left;
     margin-top: 0%;
-    background-color: gray;
-    color: black;
+    background-color: purple;
+    color: white;
     font-weight: bold;
     padding: 15px;
 }
@@ -15,6 +15,10 @@ header{
     display: flex;
     justify-content: space-between;
 }
+#searchPlaylists{
+    justify-content: center;
+}
+
 .pages{
     display: flex;
     padding-right: 50px;
@@ -28,6 +32,10 @@ header{
   color: gold;
 text-decoration: none;
 }
+#feature-page a:hover{
+  text-decoration: underline;
+
+}
 #all-page{
 margin-right: 30px;
 
@@ -35,6 +43,9 @@ margin-right: 30px;
 #all-page a{
 color: black;
 text-decoration: none;
+}
+#all-page a:hover{
+    text-decoration: underline;
 }
 #feature-playlist{
     display: flex;
@@ -64,6 +75,9 @@ text-decoration: none;
 }
 .song{
     display: flex;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
     align-items: center;
     gap: 15px;
 }

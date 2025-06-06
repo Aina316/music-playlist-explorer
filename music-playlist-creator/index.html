@@ -21,16 +21,32 @@
     </header>
 
     <main> 
+        <div id="search-box">
+        <input type="text" id="searchPlaylists" onkeyup="search()" placeholder="Search for playlists...">
+        <button id="search-btn">Search</button>
+        <button id="clear-btn">Clear</button>
+        </div> 
+        <div class="sort">
+            <label for="sort-options">Sort By: </label>
+            <select id="sort-options">
+                <option value="name">Playlist Name (A-Z)</option>
+                <option value="likes">Number of likes (Descending)</option>
+                <option value="date">Date Added (Newest to Oldest) </option>
+            </select>
+        </div>
         <section class="playlist-cards">
             
         </section>
-        <form id="review-form">
-                <label for="playlist-name">Playlist Name:</label>
-                <input type="text" id="playlist-name" name="playlist-name" required>
-                <label for="author-name">Author Name:</label>
-                <input type="text" id="author-name" name="author-name" required>
-                <button type="submit" id="add-playlist">Add Playlist</button>
-                </form>
+        <div id="addPlaylist">
+            <h4>Add New Playlists</h4>
+                <input type="text" id="playlist-name" placeholder="new playlist name">
+                <br>
+                <input type="text" id="author-name" placeholder="new author name">
+                <br>
+                <input type="text" id="new-image" placeholder="image URL">
+                <br>
+                <button onclick="addNewPlaylist()" id="add-playlist">Add New Playlist</button>
+        </div>
         
     </main>
     <div id="playlistModal" class="modal">
