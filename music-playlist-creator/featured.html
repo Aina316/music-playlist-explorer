@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Music Playlist Explorer</title>
-    
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="feature.css">
 </head>
 <body>
-    <header>
+<header>
         <nav class="navigation">
         <h1>Music Playlist Explorer</h1>
         <div class="pages">
@@ -21,30 +19,32 @@
     </header>
 
     <main> 
-        <section class="playlist-cards">
-            
+        <section id="feature-box">
+            <div id="feature-playlist">
+                <div id ="featuredPlaylistMain">
+      <img id="featuredPlaylistImage" src="./assets/img/playlist.png" alt="featured playlist image">
+      <p id="featuredPlaylistName"></p>
+      </div>
+      <div id="featured-playlist-content">
+        <div class="song">
+            <img src="" alt="">
+            <div class="song-content">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        </div>
+        </div>
         </section>
     </main>
-    <div id="playlistModal" class="modal">
-   <div class="modal-content">
-      <span class="close">&times;</span>
-      <div id="playlist-modal-box">
-      <img id="playlistImage" src="./assets/img/playlist.png" alt="playlist image">
-      <div class="playlist-content">
-      <h1 id="playlistName"></h1>
-       <h2 id="authorName"></h1>
-        <button id="shuffle">Shuffle</button>
-        </div>
-        </div>
-      <div id="songs-playlist"></div>
-   </div>
-</div>
-
     <footer>
-    Emmanuel Aina
+   
     </footer>
+
+
     <script src="https://kit.fontawesome.com/d0ac164140.js" crossorigin="anonymous"></script>
     <script src="data/data.js"></script>
-    <script src="script.js"></script>
+    <script src="feature.js"></script>
 </body>
 </html>

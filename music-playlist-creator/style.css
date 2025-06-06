@@ -7,12 +7,39 @@ body {
     margin: 0;
 }
 header{
-    text-align: center;
+    text-align: left;
     margin-top: 0%;
     background-color: gray;
-    color: rgb(66, 65, 65);
+    color: black;
+    font-weight: bold;
     padding: 15px;
 }
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.pages{
+    display: flex;
+    padding-right: 50px;
+    justify-content: space-between;
+}
+#feature-page {
+   margin-right: 30px;
+
+}
+#feature-page a{
+  color: black;
+text-decoration: none;
+}
+#all-page{
+margin-right: 30px;
+
+}
+#all-page a{
+color: gold;
+text-decoration: none;
+}
+
 footer{
 color: gray;
 background-color: grey;

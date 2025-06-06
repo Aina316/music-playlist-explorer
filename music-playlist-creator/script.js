@@ -20,11 +20,10 @@ window.onclick = function(event) {
 
 
 
-const loadCards = (shuffledPlaylists = playlists) =>{
+const loadCards = () =>{
     let cards = document.querySelector('.playlist-cards')
-    cards.innerHTML = ""
     console.log('creating cards...')
-    for (const playlist of shuffledPlaylists){
+    for (const playlist of playlists){
         let cardElement = createCardElements(playlist)
         cards.appendChild(cardElement)
         likeEffect(playlist);
@@ -87,6 +86,20 @@ function openModal(playlist) {
    document.getElementById('authorName').innerText = playlist.playlist_author
 
    loadSongs(playlist.songs)
+document.getElementById("shuffle").addEventListener('click', ()=>{
+    const songs = playlist.songs
+    console.log("10000", songs)
+    const newsongs  = shufflePlaylist(songs)
+    const songContainer = document.getElementById("songs-playlist")
+    console.log("111", songContainer)
+    songContainer.innerHTML = ''
+    for (const song of newsongs){
+        let songCard = createSongs(song)
+        songContainer.appendChild(songCard)
+    }
+
+    
+})
    modal.style.display = "block";
 }
 function createSongs(song){
@@ -96,7 +109,7 @@ function createSongs(song){
     <img src="${song.songArt}">
     <div class="song-content">
     <h4>${song.songtitle}</h4>
-    <h4> Created by ${song.artistname}</h4>
+    <h4>${song.artistname}</h4>
     <h4>${song.albumname}</h4>
     </div>
     <p>${song.duration}</p>
@@ -113,17 +126,14 @@ function loadSongs(songs){
         playlist.appendChild(songCard)
     }
 }
-let shuffled = false;
-function shufflePlaylist(playlist){
-    const songs = [...playlist]
-for(let i = songs.length-1; i>0; i--){
+
+function shufflePlaylist(songs){
+for(let i = songs.length-1; i>=0; i--){
     const j = Math.floor(Math.random() * (i+1));
     [songs[i], songs[j]] =[songs[j], songs[i]] 
 }
 return songs
 }
 
-document.getElementById("shuffle").addEventListener('click', () =>{
-    shuffled = true;
-});
+
 
