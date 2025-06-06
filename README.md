@@ -2,7 +2,7 @@
 
 Submitted by: **Emmanuel Aina**
 
-Estimated time spent: **30** hours spent in total
+Estimated time spent: **25** hours spent in total
 
 Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD_LINK_HERE)
 
@@ -48,28 +48,28 @@ Deployed Application (**required**): [Music Playlist Explorer Deployed Site](ADD
     - [x] If previously liked:
       - [x] The like count on the playlist tile should decrease by 1.
       - [x] There should be visual feedback (such as the heart turning a different color) to show that the playlist has been unliked by the user.
-    - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please film yourself liking and unliking:
+    - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please film yourself liking and unliking:
       - [x] a playlist with a like count of 0
       - [x] a playlist with a non-zero like count
 
-- [ ] **Shuffle Songs**
-  - [ ] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist's detail modal.
-  - [ ] When the shuffle button is clicked, the playlist's songs should display in a different order.
+- [x] **Shuffle Songs**
+  - [x] Enable users to shuffle the songs within a playlist using a shuffle button in the playlist's detail modal.
+  - [x] When the shuffle button is clicked, the playlist's songs should display in a different order.
   - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself shuffling the same playlist more than once. 
   
-- [ ] **Featured Page**
-  - [ ] Application includes a dedicated page that randomly selects and displays a playlist, showing the playlist’s:
-    - [ ] Playlist Image
-    - [ ] Playlist Name
-    - [ ] List of songs, including each song's:
-      - [ ] Title
-      - [ ] Artist
-      - [ ] Duration
-  - [ ] When the page is refreshed or reloaded, a new random playlist is displayed
+- [x] **Featured Page**
+  - [x] Application includes a dedicated page that randomly selects and displays a playlist, showing the playlist’s:
+    - [x] Playlist Image
+    - [x] Playlist Name
+    - [x] List of songs, including each song's:
+      - [x] Title
+      - [x] Artist
+      - [x] Duration
+  - [x] When the page is refreshed or reloaded, a new random playlist is displayed
     - For example, navigating to the all playlists page and then back to the featured playlist page should result in a new random playlist being displayed
     - Note that because your algorithm will not be truly random, it is possible that the same playlist will feature twice in a row. 
     - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS:** In addition to showcasing the above features, for ease of grading, please show yourself refreshing the featured page more than once. 
-  - [ ] Application includes a navigation bar or some other mechanism such that users can navigate to the page with all playlists from the featured page and vice versa without using the browser's back and forward buttons. 
+  - [x] Application includes a navigation bar or some other mechanism such that users can navigate to the page with all playlists from the featured page and vice versa without using the browser's back and forward buttons. 
 
 #### STRETCH FEATURES
 
