@@ -185,7 +185,12 @@ function addNewPlaylist(){
     const name = document.getElementById('playlist-name').value.trim()
     const author = document.getElementById('author-name').value.trim()
     const image = document.getElementById('new-image').value.trim()
-
+    const song1 = document.getElementById('newsong1title').value.trim()
+    const artist1  = document.getElementById('newartist1name').value.trim()
+    const album1 = document.getElementById('newalbum1name').value.trim()
+    const song2 = document.getElementById('newsong2title').value.trim()
+    const artist2  = document.getElementById('newartist2name').value.trim()
+    const album2 = document.getElementById('newalbum2name').value.trim()
     if(!name || !author || !image){
         alert("Properly Fill In Fields")
         return;
@@ -196,7 +201,7 @@ function addNewPlaylist(){
         playlist_author: author,
         playlist_art: image,
         likes: 0,
-        songs: []
+        songs: [{"songtitle":song1 ,"artistname":artist1,"albumname":album1,"duration": "6:00", "songArt": "./assets/img/one.jpg"}, {"songtitle":song2 ,"artistname":artist2,"albumname":album2,"duration": "7:00", "songArt": "./assets/img/two.jpg"}]
     }
 
     playlists.push(newPlaylist);
