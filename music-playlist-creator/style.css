@@ -9,7 +9,7 @@ body {
 header{
     text-align: left;
     margin-top: 0%;
-    background-color: gray;
+    background-color: lightblue;
     color: black;
     font-weight: bold;
     padding: 15px;
@@ -41,8 +41,8 @@ text-decoration: none;
 }
 
 footer{
-color: gray;
-background-color: grey;
+color: lightblue;
+background-color: lightblue;
 padding: 15px;
 }
 .playlist-cards{
@@ -139,10 +139,10 @@ img{
     margin-left: 40px;
  }
  #shuffle{
-    background-color: purple;
+    background-color: lightblue;
     border-radius: 25px;
     padding: 10px 20px 10px 20px;
-    color: white;
+    color: black;
     font-weight: 10px;
  }
  #shuffle:hover{
@@ -151,9 +151,11 @@ img{
  }
 .song-playcards{
     display: flex;
+    justify-content: space-between;
     border: 1px solid black;
     border-radius: 20px;
     margin: 10px;
+    padding-right: 20px;
 }
 .song-playcards img{
     margin: 10px;
@@ -165,7 +167,8 @@ line-height: 0.3;
 padding-left: 50px;
 }
 .song-playcards p{
-  padding-left: 750px;
+    text-align: right;
+  padding-left: 70px;
   padding-top: 30px;
 }
 i:hover{
