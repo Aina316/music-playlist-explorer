@@ -160,4 +160,5 @@ https://fontawesome.com/
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+
 Shout Out to all my fellow interns and the instructors for helping me out various times when I was stuck! Thank you so much!
