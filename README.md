@@ -149,13 +149,14 @@ I feel the javascript needed more time to understand which stumped me up but the
 If I had more time I would have made the design look much better, improved the functionalities I implemented, and finish up the little I couldn't impelement like the edit song feature.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
+I noticed people were more flexible in implementing their features and I believe I'll try to do that. I believe the css was good as well as the javascript but I spent so much time fixing minute stuff instead of focusing on the core features. I will try to focus on core features more intensely next time.
 
-Shout Out to all my fellow interns and the instructors for helping me out various times when I was stuck!
 
 ### Open-source libraries used
 
-- Add any links to open-source libraries used in your project.
+https://fontawesome.com/
 
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+Shout Out to all my fellow interns and the instructors for helping me out various times when I was stuck! Thank you so much!
